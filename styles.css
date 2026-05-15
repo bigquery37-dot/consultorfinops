@@ -72,18 +72,19 @@ p {
   display: flex;
   align-items: center;
   gap: 12px;
-  min-width: 220px;
+  min-width: 230px;
+  flex-shrink: 0;
 }
 
 .brand-avatar {
-  width: 48px;
-  height: 48px;
+  width: 46px;
+  height: 46px;
   border-radius: 999px;
   padding: 2px;
   background: linear-gradient(135deg, #67e8f9, #08b6d8);
   box-shadow: 0 12px 30px rgba(8, 182, 216, 0.20);
   overflow: hidden;
-  flex: 0 0 48px;
+  flex: 0 0 46px;
 }
 
 .brand-avatar img {
@@ -95,7 +96,6 @@ p {
   object-position: center top;
   border: 2px solid #ffffff;
 }
-
 .brand-copy strong {
   display: block;
   font-size: 16px;
@@ -113,12 +113,20 @@ p {
 }
 
 .menu {
+.menu {
   display: flex;
   align-items: center;
-  gap: 24px;
+  justify-content: center;
+  gap: 22px;
   color: #334155;
   font-size: 14px;
   font-weight: 700;
+  flex: 1;
+  white-space: nowrap;
+}
+
+.nav-cta {
+  flex-shrink: 0;
 }
 
 .menu a {
