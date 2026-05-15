@@ -1,590 +1,1034 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Consultor FinOps | Optimización de costos cloud en AWS, Azure y GCP</title>
-
-  <meta name="description" content="Consultoría FinOps para empresas que usan AWS, Azure o GCP. Diagnóstico de costos cloud, dashboards Power BI, optimización, presupuestos y gobierno financiero cloud." />
-
-  <meta name="keywords" content="consultor FinOps, consultoría FinOps Colombia, optimización de costos cloud, costos AWS, costos Azure, dashboard costos cloud Power BI, gobierno FinOps" />
-
-  <meta name="author" content="Carlos Correa" />
-
-  <meta property="og:title" content="Consultor FinOps | Optimización de costos cloud" />
-  <meta property="og:description" content="Ayudo a empresas que usan AWS, Azure o GCP a controlar y optimizar sus costos cloud mediante FinOps, Power BI y analítica de datos." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://consultorfinops.com" />
-
-  <link rel="stylesheet" href="styles.css" />
-</head>
-
-<body>
-
-  <header class="header">
-    <div class="container nav">
-      <a class="brand" href="#inicio" aria-label="Ir al inicio">
-        <div class="brand-photo">
-          <img src="assets/carlos-correa.jpg" alt="Carlos Correa - Consultor FinOps" />
-        </div>
-        <div>
-          <strong>Consultor FinOps</strong>
-          <span>by Carlos Correa</span>
-        </div>
-      </a>
-
-      <nav class="menu">
-        <a href="#servicios">Servicios</a>
-        <a href="#enfoque-finops">Enfoque</a>
-        <a href="#assessment">Assessment</a>
-        <a href="#metodo">Método</a>
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
-
-      <a class="btn btn-primary nav-cta" href="#contacto">Solicitar diagnóstico</a>
-    </div>
-  </header>
-
-  <main id="inicio">
-
-    <section class="hero">
-      <div class="container hero-grid">
-
-        <div class="hero-content">
-          <div class="eyebrow">
-            <span class="status-dot"></span>
-            Consultoría FinOps · AWS · Azure · GCP · Power BI
-          </div>
-
-          <h1>Controla y optimiza tus costos cloud con FinOps</h1>
-
-          <p class="hero-text">
-            Ayudo a empresas que usan AWS, Azure o GCP a identificar sobrecostos,
-            construir visibilidad ejecutiva y definir oportunidades de ahorro mediante
-            FinOps, Power BI y analítica de datos.
-          </p>
-
-          <div class="hero-actions">
-            <a class="btn btn-primary btn-icon" href="https://wa.me/573117941996" target="_blank" rel="noopener">
-              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M20.52 3.48A11.86 11.86 0 0 0 12.07 0C5.5 0 .16 5.34.16 11.91c0 2.1.55 4.15 1.6 5.96L.06 24l6.28-1.65a11.86 11.86 0 0 0 5.73 1.46h.01c6.57 0 11.91-5.34 11.91-11.91 0-3.18-1.24-6.17-3.47-8.42ZM12.08 21.8h-.01a9.88 9.88 0 0 1-5.04-1.38l-.36-.21-3.72.98.99-3.63-.23-.37a9.87 9.87 0 0 1-1.51-5.28c0-5.46 4.44-9.9 9.9-9.9a9.83 9.83 0 0 1 7 2.9 9.83 9.83 0 0 1 2.9 7c-.01 5.45-4.45 9.89-9.92 9.89Zm5.43-7.41c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.21 5.09 4.5.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35Z"/>
-              </svg>
-              Hablar por WhatsApp
-            </a>
-
-            <a class="btn btn-secondary" href="#assessment">Ver Assessment</a>
-          </div>
-
-          <div class="trust-row">
-            <span>Ingeniero de Sistemas</span>
-            <span>Especialista en Big Data</span>
-            <span>Certificado FinOps</span>
-            <span>Power BI + Cloud Cost</span>
-          </div>
-
-          <div class="stats">
-            <div>
-              <strong>10</strong>
-              <span>días de diagnóstico</span>
-            </div>
-            <div>
-              <strong>3</strong>
-              <span>nubes: AWS, Azure, GCP</span>
-            </div>
-            <div>
-              <strong>BI</strong>
-              <span>visibilidad ejecutiva</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-visual">
-          <div class="consultant-card">
-            <div class="consultant-card-top">
-              <img src="assets/carlos-correa.jpg" alt="Carlos Correa - Consultor FinOps" />
-              <div>
-                <strong>Carlos Correa</strong>
-                <span>Consultor FinOps · Big Data · Power BI</span>
-              </div>
-            </div>
-
-            <div class="mini-metrics">
-              <div>
-                <span>Costo analizado</span>
-                <strong>100%</strong>
-              </div>
-              <div>
-                <span>Servicios críticos</span>
-                <strong>Top 10</strong>
-              </div>
-              <div>
-                <span>Acciones</span>
-                <strong>Quick Wins</strong>
-              </div>
-            </div>
-          </div>
-
-          <div class="dashboard-card">
-            <div class="dashboard-header">
-              <div>
-                <span>Dashboard FinOps</span>
-                <h3>Costo Cloud Mensual</h3>
-              </div>
-              <p>Ahorro potencial</p>
-            </div>
-
-            <div class="bar-item">
-              <div class="bar-title">
-                <span>Compute / VMs</span>
-                <strong>42%</strong>
-              </div>
-              <div class="bar"><span style="width:42%"></span></div>
-              <small>Alto impacto financiero</small>
-            </div>
-
-            <div class="bar-item">
-              <div class="bar-title">
-                <span>Bases de datos</span>
-                <strong>28%</strong>
-              </div>
-              <div class="bar"><span style="width:28%"></span></div>
-              <small>Oportunidad de optimización</small>
-            </div>
-
-            <div class="bar-item">
-              <div class="bar-title">
-                <span>Storage</span>
-                <strong>16%</strong>
-              </div>
-              <div class="bar"><span style="width:16%"></span></div>
-              <small>Revisar lifecycle y retención</small>
-            </div>
-
-            <div class="bar-item">
-              <div class="bar-title">
-                <span>Logs y métricas</span>
-                <strong>9%</strong>
-              </div>
-              <div class="bar"><span style="width:9%"></span></div>
-              <small>Controlar crecimiento no presupuestado</small>
-            </div>
-
-            <div class="dashboard-note">
-              Visibilidad por servicio, proyecto, ambiente, presupuesto y variación mensual.
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="problem-section">
-      <div class="container problem-grid">
-        <div>
-          <p class="tag">El problema</p>
-          <h2>¿Tu factura cloud está creciendo y no sabes exactamente por qué?</h2>
-        </div>
-
-        <div class="problem-text">
-          <p>
-            Muchas empresas usan nube, pero no tienen claridad sobre qué servicio consume más,
-            qué recursos están sobredimensionados, qué ambientes generan gasto innecesario
-            o dónde existen oportunidades reales de ahorro.
-          </p>
-          <p>
-            Con un enfoque FinOps, la facturación cloud deja de ser solo un costo mensual
-            y se convierte en información clara para tecnología, finanzas y gerencia.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="servicios">
-      <div class="container">
-        <div class="section-title">
-          <p>Servicios</p>
-          <h2>Soluciones para entender, controlar y optimizar la nube</h2>
-          <span>
-            Servicios diseñados para empresas que necesitan convertir su facturación cloud
-            en información clara, accionable y orientada al ahorro.
-          </span>
-        </div>
-
-        <div class="cards">
-          <article class="card featured-card">
-            <div class="card-icon">01</div>
-            <h3>Assessment FinOps Express</h3>
-            <p>
-              Diagnóstico de costos cloud para identificar sobrecostos, variaciones,
-              servicios críticos y oportunidades reales de ahorro en AWS, Azure o GCP.
-            </p>
-            <a href="#assessment">Conocer assessment →</a>
-          </article>
-
-          <article class="card">
-            <div class="card-icon">02</div>
-            <h3>Dashboard Cloud en Power BI</h3>
-            <p>
-              Tableros ejecutivos para visualizar costos por proveedor, servicio,
-              proyecto, ambiente, centro de costo y presupuesto.
-            </p>
-          </article>
-
-          <article class="card">
-            <div class="card-icon">03</div>
-            <h3>Automatización de reportes</h3>
-            <p>
-              Consolidación, limpieza y transformación de archivos de facturación cloud
-              usando Python, Excel y Power BI.
-            </p>
-          </article>
-
-          <article class="card">
-            <div class="card-icon">04</div>
-            <h3>Acompañamiento mensual FinOps</h3>
-            <p>
-              Seguimiento mensual de costos, alertas, forecast, variaciones,
-              optimización y gobierno financiero cloud.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="enfoque-finops">
-      <div class="container">
-        <div class="section-title">
-          <p>Enfoque FinOps</p>
-          <h2>Un modelo práctico basado en Informar, Optimizar y Operar</h2>
-          <span>
-            El servicio se apoya en un enfoque FinOps para transformar la facturación cloud
-            en visibilidad, acciones de ahorro, gobierno financiero y mejora continua.
-          </span>
-        </div>
-
-        <div class="pillars">
-          <article class="pillar">
-            <div class="pillar-number">01</div>
-            <h3>Informar</h3>
-            <p>
-              Construimos visibilidad del consumo cloud mediante análisis de facturación,
-              clasificación de costos, dashboards ejecutivos, reportes y alertas.
-            </p>
-            <ul>
-              <li>Costos por servicio, proyecto y ambiente.</li>
-              <li>Top servicios de mayor consumo.</li>
-              <li>Variaciones mensuales y tendencias.</li>
-              <li>Dashboard ejecutivo para toma de decisiones.</li>
-            </ul>
-          </article>
-
-          <article class="pillar pillar-highlight">
-            <div class="pillar-number">02</div>
-            <h3>Optimizar</h3>
-            <p>
-              Identificamos recursos sobredimensionados, consumos anómalos, servicios de alto impacto
-              y oportunidades de ahorro priorizadas por valor financiero.
-            </p>
-            <ul>
-              <li>Quick wins de ahorro.</li>
-              <li>Recursos sin uso o sobredimensionados.</li>
-              <li>Revisión de compute, storage, bases de datos y métricas.</li>
-              <li>Matriz de oportunidades por impacto.</li>
-            </ul>
-          </article>
-
-          <article class="pillar">
-            <div class="pillar-number">03</div>
-            <h3>Operar</h3>
-            <p>
-              Definimos mecanismos para sostener el control financiero cloud mediante seguimiento,
-              responsables, presupuestos, indicadores y gobierno FinOps.
-            </p>
-            <ul>
-              <li>Presupuestos y alertas.</li>
-              <li>Responsables por consumo.</li>
-              <li>Indicadores de control y ahorro.</li>
-              <li>Seguimiento mensual y mejora continua.</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="assessment">
-      <div class="container split">
-        <div>
-          <p class="tag">Producto principal</p>
-          <h2>Assessment FinOps Express</h2>
-          <p>
-            Diagnóstico ejecutivo de costos cloud en 10 días para identificar
-            sobrecostos, servicios de mayor consumo, variaciones mensuales,
-            riesgos de gobierno y oportunidades de ahorro.
-          </p>
-
-          <div class="highlight">
-            <strong>Resultado esperado</strong>
-            <span>
-              Un informe ejecutivo, dashboard en Power BI y plan de acción priorizado
-              para mejorar el control financiero de la nube.
-            </span>
-          </div>
-
-          <div class="price-box">
-            <span>Servicio ideal para empresas que necesitan iniciar FinOps sin crear un área interna desde cero.</span>
-          </div>
-        </div>
-
-        <div class="checklist">
-          <p>✓ Análisis de facturación cloud.</p>
-          <p>✓ Identificación de principales generadores de costo.</p>
-          <p>✓ Revisión por servicio, proyecto, ambiente o centro de costo.</p>
-          <p>✓ Detección de recursos sobredimensionados o sin uso.</p>
-          <p>✓ Recomendaciones priorizadas por impacto financiero.</p>
-          <p>✓ Dashboard ejecutivo en Power BI.</p>
-          <p>✓ Informe ejecutivo para gerencia.</p>
-          <p>✓ Roadmap inicial de optimización y gobierno.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="metodo">
-      <div class="container">
-        <div class="section-title">
-          <p>Método de trabajo</p>
-          <h2>De la factura cloud a decisiones de ahorro</h2>
-          <span>
-            Un proceso simple, ejecutivo y orientado a resultados para pasar de datos dispersos
-            a decisiones claras de control y optimización.
-          </span>
-        </div>
-
-        <div class="steps">
-          <div class="step">
-            <strong>01</strong>
-            <h3>Recolección de datos</h3>
-            <p>
-              Se revisan exportaciones de facturación cloud, presupuestos, cuentas,
-              suscripciones, proyectos o archivos históricos disponibles.
-            </p>
-          </div>
-
-          <div class="step">
-            <strong>02</strong>
-            <h3>Análisis FinOps</h3>
-            <p>
-              Se identifican servicios de mayor costo, variaciones, patrones de consumo,
-              ambientes, oportunidades de ahorro y riesgos de gobierno.
-            </p>
-          </div>
-
-          <div class="step">
-            <strong>03</strong>
-            <h3>Dashboard e informe ejecutivo</h3>
-            <p>
-              Se entrega una vista ejecutiva con hallazgos, recomendaciones, quick wins
-              y plan de acción priorizado.
-            </p>
-          </div>
-
-          <div class="step">
-            <strong>04</strong>
-            <h3>Plan de acción</h3>
-            <p>
-              Se define una ruta inicial de optimización, responsables sugeridos,
-              indicadores y próximos pasos para sostener el control financiero cloud.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section value-section">
-      <div class="container">
-        <div class="section-title">
-          <p>Valor para tu empresa</p>
-          <h2>Más que reducir costos: crear control financiero cloud</h2>
-        </div>
-
-        <div class="value-grid">
-          <div class="value-card">
-            <h3>Visibilidad</h3>
-            <p>Entender qué consume, quién consume, por qué aumenta y dónde se concentra el gasto cloud.</p>
-          </div>
-
-          <div class="value-card">
-            <h3>Ahorro</h3>
-            <p>Priorizar oportunidades reales de optimización con foco en impacto financiero y facilidad de ejecución.</p>
-          </div>
-
-          <div class="value-card">
-            <h3>Gobierno</h3>
-            <p>Definir presupuestos, alertas, responsables, indicadores y seguimiento mensual del consumo.</p>
-          </div>
-
-          <div class="value-card">
-            <h3>Decisión ejecutiva</h3>
-            <p>Presentar información clara para tecnología, finanzas y gerencia mediante reportes y dashboards.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="sobre-mi">
-      <div class="container split">
-        <div class="about-box about-profile">
-          <div class="profile-header">
-            <img src="assets/carlos-correa.jpg" alt="Carlos Correa - Consultor FinOps" />
-            <div>
-              <p class="tag">Sobre mí</p>
-              <h2>Especialista en datos, nube y FinOps</h2>
-            </div>
-          </div>
-
-          <p>
-            Soy Carlos Correa, ingeniero de sistemas, especialista en análisis de Big Data
-            y certificado en FinOps.
-          </p>
-          <p>
-            Cuento con experiencia en análisis de costos cloud, Power BI, automatización
-            de datos, AWS, Azure, GCP, presupuestos, dashboards ejecutivos y modelos de
-            gobierno FinOps.
-          </p>
-          <p>
-            Ayudo a empresas a convertir sus datos de facturación cloud en información
-            clara para tomar decisiones de ahorro, control y optimización.
-          </p>
-        </div>
-
-        <div class="about-box result-box">
-          <h2>¿Qué recibe tu empresa?</h2>
-          <ul>
-            <li>Informe ejecutivo de hallazgos FinOps.</li>
-            <li>Dashboard de costos cloud en Power BI.</li>
-            <li>Matriz de oportunidades de ahorro.</li>
-            <li>Recomendaciones priorizadas por impacto.</li>
-            <li>Roadmap inicial de optimización y gobierno.</li>
-            <li>Base para seguimiento mensual FinOps.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="faq">
-      <div class="container">
-        <div class="section-title">
-          <p>Preguntas frecuentes</p>
-          <h2>Información clave antes de iniciar</h2>
-        </div>
-
-        <div class="faq-grid">
-          <div class="faq-item">
-            <h3>¿Qué necesito entregar para iniciar?</h3>
-            <p>
-              Una exportación de costos cloud desde AWS, Azure o GCP, o archivos Excel/CSV
-              con la facturación mensual disponible.
-            </p>
-          </div>
-
-          <div class="faq-item">
-            <h3>¿El servicio aplica para cualquier nube?</h3>
-            <p>
-              Sí. El análisis puede aplicarse sobre AWS, Azure, Google Cloud o ambientes
-              multinube.
-            </p>
-          </div>
-
-          <div class="faq-item">
-            <h3>¿Incluye implementación de ahorros?</h3>
-            <p>
-              El Assessment incluye identificación y priorización de oportunidades.
-              La implementación puede contratarse como acompañamiento adicional.
-            </p>
-          </div>
-
-          <div class="faq-item">
-            <h3>¿Incluye dashboard?</h3>
-            <p>
-              Sí. El diagnóstico puede incluir un dashboard ejecutivo en Power BI para
-              visualizar costos, servicios, variaciones y oportunidades.
-            </p>
-          </div>
-
-          <div class="faq-item">
-            <h3>¿Es necesario tener un área FinOps creada?</h3>
-            <p>
-              No. El servicio está diseñado para empresas que quieren iniciar con FinOps
-              de forma práctica, sin montar una estructura compleja desde el primer día.
-            </p>
-          </div>
-
-          <div class="faq-item">
-            <h3>¿Se puede trabajar con archivos Excel?</h3>
-            <p>
-              Sí. Si la empresa aún no tiene una integración automática, se puede iniciar
-              con exportaciones en Excel o CSV y luego avanzar hacia automatización.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contacto">
-      <div class="container contact-box">
-        <p class="tag">Contacto</p>
-
-        <h2>Agenda una revisión inicial de tus costos cloud</h2>
-
-        <p>
-          Si tu empresa usa AWS, Azure o GCP y necesita mayor visibilidad del gasto cloud,
-          podemos realizar una revisión inicial para identificar oportunidades de control
-          y optimización.
-        </p>
-
-        <div class="contact-panel">
-          <div>
-            <strong>Ideal para:</strong>
-            <span>Empresas con facturación cloud creciente, baja visibilidad o necesidad de control financiero.</span>
-          </div>
-          <div>
-            <strong>Modalidad:</strong>
-            <span>Servicio remoto para Colombia y Latinoamérica.</span>
-          </div>
-          <div>
-            <strong>Entregable:</strong>
-            <span>Informe ejecutivo, dashboard y plan de acción FinOps.</span>
-          </div>
-        </div>
-
-        <div class="hero-actions center">
-          <a class="btn btn-primary btn-icon" href="https://wa.me/573117941996" target="_blank" rel="noopener">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M20.52 3.48A11.86 11.86 0 0 0 12.07 0C5.5 0 .16 5.34.16 11.91c0 2.1.55 4.15 1.6 5.96L.06 24l6.28-1.65a11.86 11.86 0 0 0 5.73 1.46h.01c6.57 0 11.91-5.34 11.91-11.91 0-3.18-1.24-6.17-3.47-8.42ZM12.08 21.8h-.01a9.88 9.88 0 0 1-5.04-1.38l-.36-.21-3.72.98.99-3.63-.23-.37a9.87 9.87 0 0 1-1.51-5.28c0-5.46 4.44-9.9 9.9-9.9a9.83 9.83 0 0 1 7 2.9 9.83 9.83 0 0 1 2.9 7c-.01 5.45-4.45 9.89-9.92 9.89Zm5.43-7.41c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.21 5.09 4.5.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35Z"/>
-            </svg>
-            Hablar por WhatsApp
-          </a>
-
-          <a class="btn btn-secondary btn-icon" href="mailto:contacto@consultorfinops.com">
-            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/>
-            </svg>
-            contacto@consultorfinops.com
-          </a>
-        </div>
-
-        <small>
-          consultorfinops.com · Cali, Colombia · Servicio remoto para Colombia y Latinoamérica
-        </small>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <p>© 2026 Consultor FinOps by Carlos Correa. Todos los derechos reservados.</p>
-  </footer>
-
-</body>
-</html>
+:root {
+  --bg: #020617;
+  --bg-soft: #0f172a;
+  --bg-card: rgba(255, 255, 255, 0.065);
+  --card: rgba(255, 255, 255, 0.06);
+  --line: rgba(255, 255, 255, 0.12);
+  --line-strong: rgba(34, 211, 238, 0.32);
+  --text: #ffffff;
+  --muted: #cbd5e1;
+  --muted-2: #94a3b8;
+  --primary: #22d3ee;
+  --primary-2: #38bdf8;
+  --primary-soft: rgba(34, 211, 238, 0.12);
+  --primary-line: rgba(34, 211, 238, 0.25);
+  --green: #34d399;
+  --green-soft: rgba(52, 211, 153, 0.12);
+  --yellow: #facc15;
+  --shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top, rgba(34, 211, 238, 0.08), transparent 35%),
+    var(--bg);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  margin-top: 0;
+}
+
+.container {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  border-bottom: 1px solid var(--line);
+  background: rgba(2, 6, 23, 0.86);
+  backdrop-filter: blur(18px);
+}
+
+.nav {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand strong {
+  display: block;
+  font-size: 17px;
+  letter-spacing: -0.02em;
+}
+
+.brand span {
+  display: block;
+  margin-top: 2px;
+  font-size: 12px;
+  color: var(--muted-2);
+}
+
+.brand-photo {
+  width: 48px;
+  height: 48px;
+  border-radius: 18px;
+  padding: 2px;
+  background:
+    linear-gradient(135deg, rgba(34, 211, 238, 0.95), rgba(59, 130, 246, 0.45));
+  box-shadow: 0 0 32px rgba(34, 211, 238, 0.18);
+  flex-shrink: 0;
+}
+
+.brand-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 16px;
+  object-fit: cover;
+  border: 2px solid rgba(2, 6, 23, 0.9);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.menu a {
+  transition: 0.2s ease;
+}
+
+.menu a:hover {
+  color: white;
+}
+
+/* BUTTONS */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 24px;
+  border-radius: 16px;
+  font-weight: 800;
+  transition: 0.22s ease;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background:
+    linear-gradient(135deg, var(--primary), #67e8f9);
+  color: #03131a;
+  box-shadow: 0 18px 45px rgba(34, 211, 238, 0.22);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 60px rgba(34, 211, 238, 0.30);
+}
+
+.btn-secondary {
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.06);
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-2px);
+}
+
+.btn-icon {
+  gap: 10px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+/* HERO */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 104px 0;
+  background:
+    radial-gradient(circle at top right, rgba(34, 211, 238, 0.22), transparent 34%),
+    radial-gradient(circle at bottom left, rgba(59, 130, 246, 0.20), transparent 36%);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: linear-gradient(to bottom, black, transparent 78%);
+  pointer-events: none;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 999px;
+  right: -120px;
+  top: 120px;
+  background: rgba(34, 211, 238, 0.10);
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+.hero-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 14px;
+  border-radius: 999px;
+  color: #cffafe;
+  background: rgba(34, 211, 238, 0.10);
+  border: 1px solid rgba(34, 211, 238, 0.22);
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.status-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  background: var(--green);
+  box-shadow: 0 0 0 6px rgba(52, 211, 153, 0.14);
+}
+
+.tag {
+  display: inline-block;
+  color: var(--primary);
+  font-weight: 900;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 20px 0;
+  font-size: clamp(40px, 6vw, 70px);
+  line-height: 0.98;
+  letter-spacing: -0.06em;
+}
+
+h2 {
+  margin: 12px 0 20px;
+  font-size: clamp(30px, 4vw, 50px);
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+}
+
+h3 {
+  margin: 0 0 12px;
+}
+
+.hero-text {
+  max-width: 620px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+.hero-actions {
+  margin-top: 32px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.center {
+  justify-content: center;
+}
+
+.trust-row {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.trust-row span {
+  padding: 9px 13px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.stats {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.stats div {
+  padding: 18px;
+  border-radius: 22px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  text-align: center;
+}
+
+.stats strong {
+  display: block;
+  font-size: 30px;
+  color: var(--primary);
+}
+
+.stats span {
+  display: block;
+  margin-top: 6px;
+  color: var(--muted-2);
+  font-size: 12px;
+}
+
+/* HERO VISUAL */
+
+.hero-visual {
+  position: relative;
+}
+
+.consultant-card {
+  position: relative;
+  z-index: 2;
+  margin-bottom: -12px;
+  margin-left: 34px;
+  max-width: 420px;
+  padding: 18px;
+  border-radius: 26px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.13), rgba(255, 255, 255, 0.065));
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(14px);
+}
+
+.consultant-card-top {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.consultant-card-top img {
+  width: 58px;
+  height: 58px;
+  border-radius: 20px;
+  object-fit: cover;
+  border: 2px solid rgba(34, 211, 238, 0.45);
+}
+
+.consultant-card-top strong {
+  display: block;
+  color: white;
+  font-size: 17px;
+}
+
+.consultant-card-top span {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted-2);
+  font-size: 13px;
+}
+
+.mini-metrics {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.mini-metrics div {
+  padding: 12px;
+  border-radius: 18px;
+  background: rgba(2, 6, 23, 0.42);
+  border: 1px solid var(--line);
+}
+
+.mini-metrics span {
+  display: block;
+  color: var(--muted-2);
+  font-size: 11px;
+}
+
+.mini-metrics strong {
+  display: block;
+  margin-top: 5px;
+  color: white;
+  font-size: 14px;
+}
+
+/* DASHBOARD MOCKUP */
+
+.dashboard-card {
+  padding: 28px;
+  border-radius: 34px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.055));
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
+  position: relative;
+  overflow: hidden;
+}
+
+.dashboard-card::before {
+  content: "";
+  position: absolute;
+  inset: -80px -80px auto auto;
+  width: 180px;
+  height: 180px;
+  border-radius: 999px;
+  background: rgba(34, 211, 238, 0.12);
+  filter: blur(20px);
+}
+
+.dashboard-header,
+.bar-item,
+.dashboard-note {
+  position: relative;
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.dashboard-header span {
+  color: var(--muted-2);
+  font-size: 14px;
+}
+
+.dashboard-header h3 {
+  font-size: 26px;
+}
+
+.dashboard-header p {
+  padding: 8px 12px;
+  border-radius: 16px;
+  background: var(--green-soft);
+  color: var(--green);
+  font-size: 13px;
+}
+
+.bar-item {
+  padding: 16px;
+  margin-bottom: 14px;
+  border-radius: 20px;
+  background: rgba(2, 6, 23, 0.52);
+  border: 1px solid var(--line);
+}
+
+.bar-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.bar-title strong {
+  color: var(--primary);
+}
+
+.bar {
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+}
+
+.bar span {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background:
+    linear-gradient(90deg, var(--primary), #67e8f9);
+}
+
+.bar-item small {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted-2);
+}
+
+.dashboard-note {
+  margin-top: 18px;
+  padding: 16px;
+  border-radius: 20px;
+  background: var(--primary-soft);
+  border: 1px solid var(--primary-line);
+  color: #cffafe;
+}
+
+/* PROBLEM */
+
+.problem-section {
+  padding: 70px 0;
+  background: rgba(255, 255, 255, 0.025);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.problem-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.problem-text {
+  color: var(--muted);
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+/* SECTIONS */
+
+.section {
+  padding: 92px 0;
+}
+
+.section-alt {
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.section-title {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 52px;
+}
+
+.section-title p {
+  color: var(--primary);
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+}
+
+.section-title span {
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+/* CARDS */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card,
+.step,
+.about-box,
+.faq-item,
+.value-card,
+.pillar {
+  padding: 28px;
+  border-radius: 28px;
+  background: var(--card);
+  border: 1px solid var(--line);
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  min-height: 300px;
+  transition: 0.22s ease;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: auto -40px -70px auto;
+  width: 140px;
+  height: 140px;
+  border-radius: 999px;
+  background: rgba(34, 211, 238, 0.10);
+  filter: blur(8px);
+}
+
+.featured-card {
+  border-color: var(--line-strong);
+  background:
+    linear-gradient(180deg, rgba(34, 211, 238, 0.12), rgba(255, 255, 255, 0.06));
+}
+
+.card:hover,
+.step:hover,
+.faq-item:hover,
+.value-card:hover,
+.pillar:hover {
+  background: rgba(255, 255, 255, 0.10);
+  transform: translateY(-4px);
+}
+
+.card-icon {
+  width: 52px;
+  height: 52px;
+  margin-bottom: 22px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  background: var(--primary-soft);
+  border: 1px solid var(--primary-line);
+  color: var(--primary);
+  font-weight: 900;
+}
+
+.card p,
+.step p,
+.about-box p,
+.split p,
+.faq-item p,
+.value-card p,
+.pillar p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--primary);
+  font-weight: 800;
+  position: relative;
+}
+
+/* PILLARS */
+
+.pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.pillar {
+  transition: 0.22s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.pillar::after {
+  content: "";
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  border-radius: 999px;
+  right: -80px;
+  bottom: -90px;
+  background: rgba(34, 211, 238, 0.08);
+  filter: blur(10px);
+}
+
+.pillar-highlight {
+  border-color: var(--line-strong);
+  background:
+    linear-gradient(180deg, rgba(34, 211, 238, 0.14), rgba(255, 255, 255, 0.06));
+}
+
+.pillar-number {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 22px;
+  border-radius: 20px;
+  background: var(--primary-soft);
+  border: 1px solid var(--primary-line);
+  color: var(--primary);
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.pillar h3 {
+  font-size: 26px;
+}
+
+.pillar ul {
+  margin: 18px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+  line-height: 1.75;
+  position: relative;
+}
+
+.pillar li {
+  margin-bottom: 8px;
+}
+
+/* ASSESSMENT */
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 44px;
+  align-items: center;
+}
+
+.highlight {
+  margin-top: 28px;
+  padding: 24px;
+  border-radius: 24px;
+  background: var(--primary-soft);
+  border: 1px solid var(--primary-line);
+}
+
+.highlight strong,
+.highlight span {
+  display: block;
+}
+
+.highlight span {
+  margin-top: 8px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.price-box {
+  margin-top: 16px;
+  padding: 18px;
+  border-radius: 22px;
+  background: rgba(52, 211, 153, 0.10);
+  border: 1px solid rgba(52, 211, 153, 0.22);
+  color: #d1fae5;
+  line-height: 1.6;
+}
+
+.checklist {
+  display: grid;
+  gap: 12px;
+}
+
+.checklist p {
+  margin: 0;
+  padding: 16px;
+  border-radius: 18px;
+  background: var(--card);
+  border: 1px solid var(--line);
+}
+
+/* METHOD */
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.step {
+  transition: 0.22s ease;
+}
+
+.step strong {
+  display: block;
+  margin-bottom: 20px;
+  color: rgba(34, 211, 238, 0.78);
+  font-size: 50px;
+  line-height: 1;
+}
+
+/* VALUE */
+
+.value-section {
+  background:
+    radial-gradient(circle at center, rgba(34, 211, 238, 0.08), transparent 42%);
+}
+
+.value-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.value-card {
+  transition: 0.22s ease;
+}
+
+.value-card h3 {
+  color: white;
+  font-size: 22px;
+}
+
+/* ABOUT */
+
+.result-box {
+  border-color: var(--line-strong);
+}
+
+.about-profile {
+  position: relative;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.profile-header img {
+  width: 84px;
+  height: 84px;
+  border-radius: 26px;
+  object-fit: cover;
+  border: 2px solid rgba(34, 211, 238, 0.45);
+  box-shadow: 0 0 34px rgba(34, 211, 238, 0.12);
+}
+
+.profile-header h2 {
+  margin-bottom: 0;
+}
+
+.about-box ul {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--muted);
+  line-height: 1.9;
+}
+
+.about-box li {
+  margin-bottom: 8px;
+}
+
+/* FAQ */
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.faq-item {
+  transition: 0.22s ease;
+}
+
+.faq-item h3 {
+  color: white;
+}
+
+/* CONTACT */
+
+.contact {
+  padding: 104px 0;
+  background:
+    radial-gradient(circle at center, rgba(34, 211, 238, 0.16), transparent 45%);
+}
+
+.contact-box {
+  max-width: 900px;
+  text-align: center;
+}
+
+.contact-box p {
+  color: var(--muted);
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+.contact-panel {
+  margin: 34px auto 4px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  text-align: left;
+}
+
+.contact-panel div {
+  padding: 18px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.065);
+  border: 1px solid var(--line);
+}
+
+.contact-panel strong {
+  display: block;
+  margin-bottom: 7px;
+  color: white;
+}
+
+.contact-panel span {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.contact-box small {
+  display: block;
+  margin-top: 28px;
+  color: var(--muted-2);
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 30px;
+  text-align: center;
+  border-top: 1px solid var(--line);
+  color: var(--muted-2);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+  .menu {
+    display: none;
+  }
+
+  .hero-grid,
+  .split,
+  .problem-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cards,
+  .value-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pillars,
+  .steps,
+  .contact-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-card,
+  .consultant-card {
+    max-width: 680px;
+  }
+
+  .consultant-card {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .nav {
+    min-height: 70px;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+
+  .brand strong {
+    font-size: 15px;
+  }
+
+  .brand-photo {
+    width: 44px;
+    height: 44px;
+    border-radius: 16px;
+  }
+
+  .hero {
+    padding: 74px 0;
+  }
+
+  .eyebrow {
+    align-items: flex-start;
+    line-height: 1.4;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .hero-text,
+  .contact-box p {
+    font-size: 16px;
+  }
+
+  .cards,
+  .stats,
+  .faq-grid,
+  .mini-metrics,
+  .value-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-card,
+  .consultant-card {
+    padding: 20px;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+  }
+
+  .section {
+    padding: 72px 0;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .hero-actions {
+    width: 100%;
+  }
+
+  .problem-section {
+    padding: 58px 0;
+  }
+
+  .profile-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .profile-header img {
+    width: 78px;
+    height: 78px;
+  }
+}
