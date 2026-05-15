@@ -895,4 +895,14 @@ h3 {
   .problem-section {
     padding: 58px 0;
   }
+  .btn-icon {
+  gap: 10px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
 }
